@@ -1,0 +1,50 @@
+
+> temp_app@0.1.0 build
+> next build
+
+  ▲ Next.js 14.2.5
+
+   Creating an optimized production build ...
+ ⚠ Compiled with warnings
+
+./components/Projects.tsx
+Attempted import error: 'Github' is not exported from '__barrel_optimize__?names=ExternalLink,Github!=!lucide-react' (imported as 'Github').
+
+Import trace for requested module:
+./components/Projects.tsx
+
+./components/Navbar.tsx
+Attempted import error: 'Github' is not exported from '__barrel_optimize__?names=Code2,Github,Linkedin!=!lucide-react' (imported as 'Github').
+
+Import trace for requested module:
+./components/Navbar.tsx
+./app/layout.tsx
+
+./components/Navbar.tsx
+Attempted import error: 'Linkedin' is not exported from '__barrel_optimize__?names=Code2,Github,Linkedin!=!lucide-react' (imported as 'Linkedin').
+
+Import trace for requested module:
+./components/Navbar.tsx
+./app/layout.tsx
+
+ ⚠ Compiled with warnings
+
+./components/Projects.tsx
+Attempted import error: 'Github' is not exported from '__barrel_optimize__?names=ExternalLink,Github!=!lucide-react' (imported as 'Github').
+
+Import trace for requested module:
+./components/Projects.tsx
+
+ ✓ Compiled successfully
+   Linting and checking validity of types ...
+Failed to compile.
+
+./components/Navbar.tsx:2:10
+Type error: Module '"lucide-react"' has no exported member 'Github'.
+
+[0m [90m 1 |[39m [36mimport[39m [33mLink[39m [36mfrom[39m [32m'next/link'[39m[33m;[39m[0m
+[0m[31m[1m>[22m[39m[90m 2 |[39m [36mimport[39m { [33mGithub[39m[33m,[39m [33mLinkedin[39m[33m,[39m [33mCode2[39m } [36mfrom[39m [32m'lucide-react'[39m[33m;[39m[0m
+[0m [90m   |[39m          [31m[1m^[22m[39m[0m
+[0m [90m 3 |[39m [36mimport[39m profileData [36mfrom[39m [32m'@/data/profile.json'[39m[33m;[39m[0m
+[0m [90m 4 |[39m[0m
+[0m [90m 5 |[39m [36mexport[39m [36mdefault[39m [36mfunction[39m [33mNavbar[39m() {[0m

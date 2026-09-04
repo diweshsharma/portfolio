@@ -1,0 +1,22 @@
+[
+  {
+    "category": "Programming Languages",
+    "skills": ["Python", "SQL", "C++"]
+  },
+  {
+    "category": "ML/DL Frameworks",
+    "skills": ["PyTorch", "Scikit-learn", "XGBoost", "CNNs", "LSTMs/RNNs", "Transformers"]
+  },
+  {
+    "category": "Libraries & Tools",
+    "skills": ["NumPy", "Pandas", "Matplotlib", "Seaborn", "NLTK", "spaCy", "KeyBERT", "LangChain"]
+  },
+  {
+    "category": "Data Science",
+    "skills": ["NLP", "Feature Engineering", "Statistical Analysis", "Model Evaluation", "Data Visualization"]
+  },
+  {
+    "category": "Technologies",
+    "skills": ["FastAPI", "Streamlit", "Docker", "Git", "GitHub", "Jupyter Notebook", "CUDA/GPU Training"]
+  }
+]

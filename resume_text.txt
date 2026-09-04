@@ -1,0 +1,46 @@
+Diwesh Sharma
+/linkedindiweshsharma | /githubdiweshsharma | /leetcodeiconDiwxsh | ✉ diweshsharma.janu@gmail.com | ♂¶obile+91-9354680059
+Summary
+Proficient in machine learning, deep learning, and NLP, building end-to-end pipelines using Python, PyTorch,
+Scikit-learn, XGBoost, and Streamlit. Experienced in data preprocessing, feature engineering, model evaluation,
+and deployment via FastAPI and Docker. Built and deployed projects achieving 94% accuracy in NLP
+classification, 0.97 ROC-AUC in anomaly detection, and 93%+ accuracy in CNN-based image classification.
+Strong foundation in Data Structures, Statistics, and Algorithms. Actively seeking AI/ML Engineer roles.
+Education
+Dronacharya College of Engineering Gurugram, Haryana
+Bachelor of Technology, Computer Science (AI & ML) — CGPA: 8.0/10.0 May 2023 – May 2027
+A.V.R Public School Delhi
+Senior Secondary (XII), Science, CBSE — 89% 2023
+A.V.R Public School Delhi
+Secondary School (X), CBSE — 93% 2021
+Skills
+Programming Languages : Python, SQL, C++
+ML/DL F rameworks: PyTorch, Scikit-learn, XGBoost, CNNs (Transfer Learning), LSTMs/RNNs, Transformers
+Libraries & T ools: NumPy, Pandas, Matplotlib, Seaborn, NLTK, spaCy, KeyBERT, LangChain
+Data Science : NLP, Feature Engineering, Statistical Analysis, Model Evaluation, Data Visualization
+T echnologies: FastAPI, Streamlit, Docker, Git, GitHub, Jupyter Notebook, CUDA/GPU Training
+Projects
+Student Placement Prediction System | Python, Scikit-learn, XGBoost, FastAPI, Groq API, Render Demo Link
+– Trained and benchmarked 6 models (Logistic Regression, Random Forest, XGBoost for classification; Linear
+Regression, Random Forest, XGBoost Regressor for salary prediction) on 100K student records
+– XGBoost selected as best classifier (Recall: 0.63) and Linear Regression as best regressor (R2: 0.79); deployed
+cascaded pipeline with shared preprocessor to eliminate data leakage
+– Integrated Groq LLM (Llama 3.1) for personalized weak-area suggestions; deployed full-stack on Render with
+FastAPI backend and Streamlit frontend
+Credit Card F raud Detection | Python, XGBoost, SMOTE, Scikit-learn, Imbalanced-learn GitHub
+– Achieved 98% recall and 0.97 ROC-AUC on highly imbalanced dataset (0.17% fraud rate) using XGBoost with
+hyperparameter tuning
+– Applied SMOTE oversampling to address class imbalance, improving fraud detection rate by 35%
+– Benchmarked Logistic Regression, Decision Tree, and XGBoost; optimized for recall and F1-score to minimize false
+negatives
+Quillify – AI W riting Assistant | Gemini API, LangChain, KeyBERT, spaCy, FastAPI, Streamlit In Progress
+– Architecting a multi-module AI writing assistant integrating Gemini API, LangChain, and spaCy across four tools:
+Blog SEO Analyzer, Paragraph Enhancer, Resume Optimizer, and Tone Rewriter
+– Designing keyword-extraction and content-scoring logic with KeyBERT and spaCy, backed by a planned FastAPI +
+Streamlit deployment architecture
+Heart Disease Prediction | Python, Scikit-learn, Streamlit, Plotly Demo Link
+– Deployed Streamlit app predicting heart disease risk on UCI dataset (303 patients, 13 features) achieving 84.49%
+accuracy with interactive Plotly dashboard
+Certifications
+Certified Generative AI Professional – Oracle
+Explore Machine Learning using R – Infosys

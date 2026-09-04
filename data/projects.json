@@ -1,0 +1,77 @@
+[
+  {
+    "id": "student-placement-prediction",
+    "title": "Student Placement Prediction System",
+    "featured": true,
+    "rank": 1,
+    "technologies": ["Python", "Scikit-learn", "XGBoost", "FastAPI", "Groq API", "Render"],
+    "summary": "End-to-end full-stack cascaded ML pipeline deployed to predict student placements and provide personalized LLM feedback.",
+    "problem": "Predicting student placement outcomes on a 100K+ records dataset requires careful algorithmic choice to avoid data leakage and strong deployment strategy to make the predictions accessible.",
+    "solution": "Trained and benchmarked 6 models to identify XGBoost (Recall: 0.63) as the best classifier and Linear Regression (R2: 0.79) as the best regressor. Deployed a cascaded pipeline with a shared preprocessor.",
+    "architecture": "A full-stack deployment on Render using a FastAPI backend to serve the ML cascaded models and Groq Llama 3.1 LLM, interfaced via a Streamlit frontend.",
+    "technical_decisions": "Selected a cascaded classification + regression strategy rather than a multi-output model to maintain distinct thresholds. Chosen Groq API for Llama 3.1 inference due to its extreme low latency generation suitable for web interaction.",
+    "implementation": "100K student records processed. Shared preprocessor developed to eliminate data leakage between train/test splits and deployment states. Deployed to Render.",
+    "challenges": "A major challenge was preventing data leakage between the two sequential models while keeping the API endpoints stateless and fast.",
+    "results": ["Classified with XGBoost at Recall: 0.63", "Regressed salary with Linear Regression R2: 0.79", "Benchmarked 6 different model types", "Full-stack production web deployment"],
+    "lessons": "Learned that cascaded ML models require strict state preservation of standard scalers and encoding to guarantee correct inference behavior in production APIs.",
+    "links": {
+      "demo": "https://github.com/diweshsharma",
+      "github": "https://github.com/diweshsharma"
+    }
+  },
+  {
+    "id": "credit-card-fraud-detection",
+    "title": "Credit Card Fraud Detection",
+    "featured": true,
+    "rank": 2,
+    "technologies": ["Python", "XGBoost", "SMOTE", "Scikit-learn", "Imbalanced-learn"],
+    "summary": "High-performance classifier targeting an aggressively imbalanced financial dataset to minimize false negatives.",
+    "problem": "Fraud detection datasets show extreme class imbalance (only 0.17% fraud rate), meaning naive accuracy is a misleading metric and models inherently lean toward the majority class.",
+    "solution": "Applied SMOTE (Synthetic Minority Over-sampling Technique) to address class imbalance, improving the fraud detection rate by 35%.",
+    "architecture": "Structured Jupyter pipeline focusing heavily on exploratory data analysis, SMOTE application, hyperparameter tuning grid search, and multi-model benchmarking.",
+    "technical_decisions": "Optimized strictly for Recall and F1-score rather than accuracy to minimize false negatives (which are unacceptable in fraud detection).",
+    "implementation": "Benchmarked Logistic Regression, Decision Tree, and XGBoost on the resampled data to establish the strongest discriminator.",
+    "challenges": "Over-representing synthetic data can lead to poor test generalization. Ensured SMOTE was applied strictly to the training split, not validation.",
+    "results": ["Achieved 98% recall", "Achieved 0.97 ROC-AUC", "Demonstrated 35% improvement in detection rate on 0.17% fraud rate data"],
+    "lessons": "Discovered that SMOTE creates synthetic overlap logic that standard tree ensembles can occasionally overfit; rigorous independent validation sets are required.",
+    "links": {
+      "github": "https://github.com/diweshsharma"
+    }
+  },
+  {
+    "id": "quillify-ai-assistant",
+    "title": "Quillify – AI Writing Assistant",
+    "featured": true,
+    "rank": 3,
+    "technologies": ["Gemini API", "LangChain", "KeyBERT", "spaCy", "FastAPI", "Streamlit"],
+    "summary": "Multi-module AI writing assistant integrating large language models for SEO and structural editing.",
+    "problem": "Many LLM wrappers lack focused constraints. Standard chat interfaces don't perform well for specialized multi-step text pipeline tasks like SEO optimization coupled with tone editing.",
+    "solution": "Architecting a multi-module assistant targeting specific domain functions: Blog SEO Analyzer, Paragraph Enhancer, Resume Optimizer, and Tone Rewriter.",
+    "architecture": "Expected to utilize a FastAPI orchestration layer interacting with Gemini via LangChain, utilizing spaCy/KeyBERT for deterministic NLP rule parsing before generating.",
+    "technical_decisions": "Combining deterministic NLP (spaCy/KeyBERT) with generative LLMs (Gemini API) to anchor and score text explicitly before passing instructions to the LLM.",
+    "implementation": "Currently in progress. Designing keyword extraction and content scoring logic components.",
+    "challenges": "Ensuring the output from LangChain handles unstructured inputs without breaking the strict JSON schema required for multiple internal API modules.",
+    "results": ["In-progress prototyping phase"],
+    "lessons": "Understanding the limits of relying purely on generative AI versus utilizing structured deterministic analysis like KeyBERT for feature extraction.",
+    "links": {}
+  },
+  {
+    "id": "heart-disease-prediction",
+    "title": "Heart Disease Prediction",
+    "featured": false,
+    "rank": 4,
+    "technologies": ["Python", "Scikit-learn", "Streamlit", "Plotly"],
+    "summary": "Interactive data dashboard and predictive model for heart disease risk classification.",
+    "problem": "Medical models require interpretable interfaces for users to understand prediction thresholds.",
+    "solution": "Deployed a Streamlit application providing interactive health inputs against a trained Scikit-learn model.",
+    "architecture": "Monolithic Streamlit application embedding the pickled classification model and Plotly for visual feedback.",
+    "technical_decisions": "Leveraged Plotly for highly interactive dashboard metrics alongside the raw prediction probability.",
+    "implementation": "Trained on the UCI dataset (303 patients, 13 features), deployed via Streamlit cloud.",
+    "challenges": "Balancing limited feature permutations against interactive dashboard requirements for edge cases.",
+    "results": ["Achieved 84.49% accuracy", "Deployed publicly with Plotly interactive charts"],
+    "lessons": "Streamlit proves highly effective for extremely fast ML prototyping and basic dashboard interactions.",
+    "links": {
+      "demo": "https://github.com/diweshsharma"
+    }
+  }
+]

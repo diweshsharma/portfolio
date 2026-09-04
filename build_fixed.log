@@ -1,0 +1,31 @@
+
+> temp_app@0.1.0 build
+> next build
+
+  ▲ Next.js 14.2.5
+
+   Creating an optimized production build ...
+Failed to compile.
+
+./app/layout.tsx
+Module not found: Can't resolve '@/components/Navbar'
+
+https://nextjs.org/docs/messages/module-not-found
+
+./app/page.tsx
+Module not found: Can't resolve '@/components/Hero'
+
+https://nextjs.org/docs/messages/module-not-found
+
+./app/page.tsx
+Module not found: Can't resolve '@/components/Projects'
+
+https://nextjs.org/docs/messages/module-not-found
+
+./app/page.tsx
+Module not found: Can't resolve '@/components/Skills'
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+> Build failed because of webpack errors

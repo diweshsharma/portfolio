@@ -1,0 +1,23 @@
+[
+  {
+    "institution": "Dronacharya College of Engineering",
+    "location": "Gurugram, Haryana",
+    "degree": "Bachelor of Technology, Computer Science (AI & ML)",
+    "date": "May 2023 – May 2027",
+    "gpa": "8.0/10.0"
+  },
+  {
+    "institution": "A.V.R Public School",
+    "location": "Delhi",
+    "degree": "Senior Secondary (XII), Science, CBSE",
+    "date": "2023",
+    "gpa": "89%"
+  },
+  {
+    "institution": "A.V.R Public School",
+    "location": "Delhi",
+    "degree": "Secondary School (X), CBSE",
+    "date": "2021",
+    "gpa": "93%"
+  }
+]
