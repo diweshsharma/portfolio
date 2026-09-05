@@ -69,7 +69,7 @@ export default function Chatbot() {
     <>
       <button
         onClick={() => setIsOpen(true)}
-        className={`fixed bottom-6 right-6 p-4 rounded-full bg-emerald-500 text-black shadow-[0_0_20px_rgba(52,211,153,0.4)] z-40 transition-transform duration-300 hover:scale-110 ${isOpen ? 'scale-0' : 'scale-100'}`}
+        className={`fixed bottom-6 right-6 p-4 rounded-full bg-primary text-primary-foreground shadow-[0_0_20px_rgba(168,85,247,0.4)] z-40 transition-transform duration-300 hover:scale-110 ${isOpen ? 'scale-0' : 'scale-100'}`}
         aria-label="Open Ask AI"
       >
         <Bot className="w-6 h-6" />
@@ -86,7 +86,7 @@ export default function Chatbot() {
           >
             <div className="flex items-center justify-between p-4 border-b border-white/10 bg-white/5">
               <div className="flex items-center gap-3">
-                <div className="p-2 bg-emerald-500/20 rounded-md"><Sparkles className="w-4 h-4 text-emerald-400" /></div>
+                <div className="p-2 bg-primary/20 rounded-md"><Sparkles className="w-4 h-4 text-primary" /></div>
                 <div>
                   <h3 className="font-semibold text-sm">Ask AI</h3>
                   <p className="text-xs text-muted-foreground">Portfolio Assistant</p>
@@ -102,7 +102,7 @@ export default function Chatbot() {
                 <div key={i} className={`flex flex-col ${msg.role === 'user' ? 'items-end' : 'items-start'}`}>
                   <div className={`flex items-center gap-2 mb-1 ${msg.role === 'user' ? 'flex-row-reverse' : 'flex-row'}`}>
                     <div className="w-6 h-6 rounded-full bg-white/10 flex items-center justify-center">
-                      {msg.role === 'user' ? <User className="w-3 h-3 text-white/50" /> : <Bot className="w-3 h-3 text-emerald-400" />}
+                      {msg.role === 'user' ? <User className="w-3 h-3 text-white/50" /> : <Bot className="w-3 h-3 text-primary" />}
                     </div>
                     <span className="text-xs text-white/40">{msg.role === 'user' ? 'You' : 'AI'}</span>
                   </div>
@@ -113,9 +113,9 @@ export default function Chatbot() {
               ))}
               {isLoading && (
                 <div className="flex items-center gap-2 text-xs text-muted-foreground ml-8">
-                  <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-bounce"></span>
-                  <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-bounce" style={{animationDelay: '0.2s'}}></span>
-                  <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-bounce" style={{animationDelay: '0.4s'}}></span>
+                  <span className="w-1.5 h-1.5 rounded-full bg-primary animate-bounce"></span>
+                  <span className="w-1.5 h-1.5 rounded-full bg-primary animate-bounce" style={{animationDelay: '0.2s'}}></span>
+                  <span className="w-1.5 h-1.5 rounded-full bg-primary animate-bounce" style={{animationDelay: '0.4s'}}></span>
                 </div>
               )}
             </div>
@@ -127,12 +127,12 @@ export default function Chatbot() {
                   value={input}
                   onChange={(e) => setInput(e.target.value)}
                   placeholder="Ask about Diwesh's skills or projects..."
-                  className="w-full bg-white/5 border border-white/10 rounded-lg pr-12 pl-4 py-3 text-sm focus:outline-none focus:ring-1 focus:ring-emerald-500/50 transition-all"
+                  className="w-full bg-white/5 border border-white/10 rounded-lg pr-12 pl-4 py-3 text-sm focus:outline-none focus:ring-1 focus:ring-primary/50 transition-all"
                 />
                 <button
                   type="submit"
                   disabled={isLoading || !input.trim()}
-                  className="absolute right-2 p-1.5 bg-emerald-500/20 text-emerald-400 rounded-md hover:bg-emerald-500/30 disabled:opacity-50 disabled:hover:bg-emerald-500/20 transition-colors"
+                  className="absolute right-2 p-1.5 bg-primary/20 text-primary rounded-md hover:bg-primary/30 disabled:opacity-50 disabled:hover:bg-primary/20 transition-colors"
                 >
                   <Send className="w-4 h-4" />
                 </button>
