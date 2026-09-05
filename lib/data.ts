@@ -40,7 +40,7 @@ export const PORTFOLIO_DATA = {
       title: "Student Placement Prediction",
       description: "Trained and benchmarked 6 models on 100K student records. Integrated Groq LLM (Llama 3.1) for personalized weak-area suggestions. Deployed full-stack on Render with FastAPI and Streamlit.",
       tags: ["Python", "XGBoost", "FastAPI", "Groq API"],
-      liveUrl: "#",
+      liveUrl: "https://student-placement-prediction-ik3k.onrender.com",
       codeUrl: "#",
       image: "/placement.jpg"
     },
