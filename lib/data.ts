@@ -6,7 +6,7 @@ export const PORTFOLIO_DATA = {
     location: "Gurgaon",
     email: "diweshsharma.janu@gmail.com",
     resumeUrl: "/resume.pdf",
-    profileImage: "/profile.jpg"
+    profileImage: "/profile.png"
   },
   social: {
     github: "https://github.com/diweshsharma",
